@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="../../src/padatables.css" rel="stylesheet">
+  <script src="../../src/padatables.js"></script>
+  <title>PadaTables</title>
+</head>
+<body>
+  <div id="filtros"></div>
+  <table class='padatables' cellspacing="0">
+    <thead>
+      <tr>
+        <th data-sort data-searcheable>Nombre</th>
+        <th data-searcheable>Sinopsis</th>
+        <th data-sort data-type="int">Año</th>
+        <th>Género</th>
+        <th data-searcheable>Director</th>
+        <th data-sort data-type="float">Puntaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>La cosa</td>
+        <td>Una cosa viene y mata a todos en el sur</td>
+        <td>1976</td>
+        <td>Terror</td>
+        <td>Jhon Carpenter</td>
+        <td>9.5</td>
+      </tr>
+      <tr>
+        <td>IT</td>
+        <td>Un payaso que es en realidad un bogart y toma la forma de que lo más te asuste. Come pibes (como el bambino)</td>
+        <td>1990</td>
+        <td>Terror</td>
+        <td>Stephen King</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Deadpool</td>
+        <td>El mecenario bocazas, pero la versión copada de Ryan Raynolds (2016), no la versión poronga de Ryan Raynolds (2009)</td>
+        <td>2016</td>
+        <td>Comics</td>
+        <td>Ni idea</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Rocky</td>
+        <td>Silvestre Está Alone hace su debut a lo grande como un boxeador insipirado en Rocky Marciano, pero se llama Balboa</td>
+        <td>1976</td>
+        <td>Accion / Deporte</td>
+        <td>John G Avildsen</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Avatar</td>
+        <td>Unos pitufos de 2.30mt de altura de otro planeta, se enfrentan al sindicato de la construcción de Caballito, en una versión aggiornada de Civilización vs Barbarie</td>
+        <td>2009</td>
+        <td>Aventuras</td>
+        <td>James Cameron</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Matrix</td>
+        <td>Las wachowski haciendo su mejor película de todos los tiempos (al menos la uno) que nos demostró que el elegido, no necesariamente tiene que tener expresividad en su rostro.</td>
+        <td>1999</td>
+        <td>Sci Fi</td>
+        <td>Lana Wachowski y Lili Wachowski</td>
+        <td>9.9</td>
+      </tr>
+      <tr>
+        <td>Fiesta de Salchichas</td>
+        <td>Una inocente película para niños, del estudio que te trajo The Emoji Movie, pero son salchichas y panes de salchichas que te van a hacer replantear ponerle o no mostaza.</td>
+        <td>2016</td>
+        <td>Comedia</td>
+        <td>Seth Rogen</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Halcón</td>
+        <td>Un mal padre se tiene que hacer cargo de su hijo, y en vez de educarlo lo lleva por EEUU a jugar pulseadas.</td>
+        <td>2016</td>
+        <td>Acción</td>
+        <td>NLMPI</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>Peli 1</td>
+        <td>Weom ipsum recontrarechucha la wea, que cachai, a achacarse al lote, ando pato pero bacán.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 2</td>
+        <td>Eres seco, pero voy a sacar la cresta para tirar a la chuña y quedar re piola.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4.1</td>
+      </tr>
+      <tr>
+        <td>Peli 3</td>
+        <td>Si paveo es porque soy patudo, así que nanai, peludo, sal de pololo y no seas fome.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4.6</td>
+      </tr>
+      <tr>
+        <td>Peli 4</td>
+        <td>Eres un Guanaco ganso que echa la foca para embarrarla y sólo se chorea.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4.2</td>
+      </tr>
+      <tr>
+        <td>Peli 5</td>
+        <td>Weom ipsum recontrarechucha la wea, que cachai, a achacarse al lote, ando pato pero bacán.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 6</td>
+        <td>Eres seco, pero voy a sacar la cresta para tirar a la chuña y quedar re piola.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 7</td>
+        <td>Si paveo es porque soy patudo, así que nanai, peludo, sal de pololo y no seas fome.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 8</td>
+        <td>Eres un Guanaco ganso que echa la foca para embarrarla y sólo se chorea.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 9</td>
+        <td>Weom ipsum recontrarechucha la wea, que cachai, a achacarse al lote, ando pato pero bacán.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 10</td>
+        <td>Eres seco, pero voy a sacar la cresta para tirar a la chuña y quedar re piola.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 11</td>
+        <td>Si paveo es porque soy patudo, así que nanai, peludo, sal de pololo y no seas fome.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 12</td>
+        <td>Eres un Guanaco ganso que echa la foca para embarrarla y sólo se chorea.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 13</td>
+        <td>Weom ipsum recontrarechucha la wea, que cachai, a achacarse al lote, ando pato pero bacán.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 14</td>
+        <td>Eres seco, pero voy a sacar la cresta para tirar a la chuña y quedar re piola.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 15</td>
+        <td>Si paveo es porque soy patudo, así que nanai, peludo, sal de pololo y no seas fome.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 16</td>
+        <td>Eres un Guanaco ganso que echa la foca para embarrarla y sólo se chorea.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 17</td>
+        <td>Weom ipsum recontrarechucha la wea, que cachai, a achacarse al lote, ando pato pero bacán.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 18</td>
+        <td>Eres seco, pero voy a sacar la cresta para tirar a la chuña y quedar re piola.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 19</td>
+        <td>Si paveo es porque soy patudo, así que nanai, peludo, sal de pololo y no seas fome.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Peli 20</td>
+        <td>Eres un Guanaco ganso que echa la foca para embarrarla y sólo se chorea.</td>
+        <td>2020</td>
+        <td>No catalogado</td>
+        <td>Desconocido</td>
+        <td>4</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div id="paginador"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

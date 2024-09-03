@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="../../src/padatables.css" rel="stylesheet">
+  <script src="../../src/padatables.js"></script>
+  <title>PadaTables</title>
+</head>
+<body>
+  <div id="filtros"></div>
+  <table class='padatables' cellspacing="0">
+    <thead>
+      <tr>
+        <th data-col="NOMBRE" data-sort data-searcheable>Titulo</th>
+        <th data-col="GENERO">Género</th>
+        <th data-col="SINOPSIS" data-searcheable>Sinopsis</th>
+        <th data-col="PUNTAJE" data-sort data-type="float">Puntaje</th>
+        <th data-col="ANIO" data-sort data-type="int">Año</th>
+        <th data-col="DIRECTOR" data-searcheable>Director</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="6">No se han encontrado registros</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div id="paginador"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
